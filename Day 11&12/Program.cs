@@ -46,6 +46,10 @@ namespace Day_11_12
                     Console.WriteLine("welcome to the pattern program");
                     Pattern.FindingStarsPattern();
                     break;
+                 case 6:
+                    Console.WriteLine("welcome to the pattern program2");
+                    Pattern2.FindRectangularShapePattern();
+                    break;
             }
         }
     }
