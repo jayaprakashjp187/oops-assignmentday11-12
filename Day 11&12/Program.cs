@@ -7,7 +7,7 @@ namespace Day_11_12
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Duplicate Program\n2.UniqueElements\n3.count frequency program\n4.Finding max and min numbers in array\n5.pattern program");
+            Console.WriteLine("1.Duplicate Program\n2.UniqueElements\n3.count frequency program\n4.Finding max and min numbers in array\n5.pattern program\n6.patternprogram rectangular shape\n7.reverse of word");
             Console.WriteLine("please choose what program u want");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch(choose)
@@ -49,6 +49,10 @@ namespace Day_11_12
                  case 6:
                     Console.WriteLine("welcome to the pattern program2");
                     Pattern2.FindRectangularShapePattern();
+                    break;
+                case 7:
+                    Console.WriteLine("welcome to the reverse word");
+                    ReverseWord.FindingReverseWord();
                     break;
             }
         }
