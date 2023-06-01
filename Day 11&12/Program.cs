@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Transactions;
 using System.Xml.Schema;
 
 namespace Day_11_12
@@ -7,7 +8,7 @@ namespace Day_11_12
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Duplicate Program\n2.UniqueElements\n3.count frequency program\n4.Finding max and min numbers in array\n5.pattern program\n6.patternprogram rectangular shape\n7.reverse of word");
+            Console.WriteLine("1.Duplicate Program\n2.UniqueElements\n3.count frequency program\n4.Finding max and min numbers in array\n5.pattern program\n6.patternprogram rectangular shape\n7.reverse of word\n8.sum of digits in a number");
             Console.WriteLine("please choose what program u want");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch(choose)
@@ -53,6 +54,12 @@ namespace Day_11_12
                 case 7:
                     Console.WriteLine("welcome to the reverse word");
                     ReverseWord.FindingReverseWord();
+                    break;
+                case 8:
+                    Console.WriteLine("welcome to the sum of digits number");
+                    Console.WriteLine("enter the number" );
+                    int c=Convert.ToInt32(Console.ReadLine());
+                    SumOfDigits.FindingSumOfDigits(c);
                     break;
             }
         }
