@@ -6,7 +6,7 @@ namespace Day_11_12
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Duplicate Program\n2.UniqueElements\n3.count frequency program");
+            Console.WriteLine("1.Duplicate Program\n2.UniqueElements\n3.count frequency program\n4.Finding max and min numbers in array");
             Console.WriteLine("please choose what program u want");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch(choose)
@@ -33,6 +33,13 @@ namespace Day_11_12
                             Console.WriteLine($"{pair.Key}\t{pair.Value}");
                         }
                     }
+                    break;
+                case 4:
+                    Console.WriteLine("welcome to the maximum and minimum finding a number in a array");
+                    int[] nums = { 5, 2, 8, 3, 9, 1, 4, 7, 6 };
+
+                    MaximumAndMinimumNumber.FindMaximumNumber(nums);
+                    MaximumAndMinimumNumber.FindMinimumNumber(nums);
                     break;
             }
         }
