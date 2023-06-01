@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Xml.Schema;
 
 namespace Day_11_12
 {
@@ -6,7 +7,7 @@ namespace Day_11_12
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1.Duplicate Program\n2.UniqueElements\n3.count frequency program\n4.Finding max and min numbers in array");
+            Console.WriteLine("1.Duplicate Program\n2.UniqueElements\n3.count frequency program\n4.Finding max and min numbers in array\n5.pattern program");
             Console.WriteLine("please choose what program u want");
             int choose =Convert.ToInt32(Console.ReadLine());
             switch(choose)
@@ -40,6 +41,10 @@ namespace Day_11_12
 
                     MaximumAndMinimumNumber.FindMaximumNumber(nums);
                     MaximumAndMinimumNumber.FindMinimumNumber(nums);
+                    break;
+                case 5:
+                    Console.WriteLine("welcome to the pattern program");
+                    Pattern.FindingStarsPattern();
                     break;
             }
         }
