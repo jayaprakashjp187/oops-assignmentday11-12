@@ -28,7 +28,7 @@ namespace Day_11_12
                         Dictionary<int, int> frequencyMap =CountFrequencyNumber.CountFrequency(numbers);
 
                         Console.WriteLine("Element Frequency");
-                        foreach (object key in frequencyMap.Keys)
+                        foreach (int key in frequencyMap.Keys)
                         {
                             Console.WriteLine(key +" " +frequencyMap[key]);
                         }
